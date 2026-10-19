@@ -1,0 +1,99 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #87ceeb;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+#app {
+  position: fixed;
+  inset: 0;
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: none;
+}
+
+#hud {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+#crosshair {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 26px;
+  text-shadow: 0 1px 3px rgba(0,0,0,.7);
+}
+
+#topbar {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background: rgba(0,0,0,.35);
+  border-radius: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+#leftControls {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  pointer-events: auto;
+}
+
+#joystickBase {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.18);
+  border: 2px solid rgba(255,255,255,.35);
+  position: relative;
+  touch-action: none;
+}
+
+#joystickKnob {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.45);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#rightControls {
+  position: absolute;
+  right: 16px;
+  bottom: 22px;
+  pointer-events: auto;
+}
+
+#placeBtn {
+  width: 88px;
+  height: 88px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(76, 175, 80, .85);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#placeBtn:active {
+  transform: scale(0.98);
+}
